@@ -6,7 +6,7 @@ import { updateDeployedContracts } from "./packages/hardhat/scripts/updateDeploy
 import { Request, Response } from "express";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 const hre: HardhatRuntimeEnvironment = require("./packages/hardhat/node_modules/hardhat");
-hre.network.name = "polygonMumbai";
+hre.network.name = "sepolia";
 
 const app = express();
 app.use(cors({
